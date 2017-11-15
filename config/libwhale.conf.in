@@ -1,0 +1,32 @@
+# System default settings live in /etc/updateservice.d/00-system.conf.
+# To override those settings, enter new settings here, or in an /etc/updateservice.d/<name>.conf file
+#
+# For more information, see updateservice.conf and updateservice.d.
+
+[system]
+# system identify
+uuid=3c61e930-96bc-11e6-84b7-000c293b890a
+# system version
+version=@VERSION@
+# update interval (unit: sec)
+interval=10
+
+[server]
+# updateservice server address, default is 127.0.0.1, after modify, you must restart service.
+addr=192.168.7.66
+# updateservice server port, default is 9587, after modify, you must restart service.
+port=9590
+
+[controller]
+# controller server address, default is 1.0.0, after modify, you must restart service.
+version=1.0.0
+# controller server platform, default is 0, after modify, you must restart service. 0 EmbedSky | 1 OrangePi
+platform=0
+
+[log]
+# log output level, default is 4, range is 1-9.
+level=9
+# log output to file, default is 0, don't output to file, if you want to output log to file, you can set value to 1.
+outputFile=0
+# log output to console, default is 0, don't output to console, if you want to output log to console, you can set value to 1.
+outputConsole=1

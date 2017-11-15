@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Include Files">
+      <UniqueIdentifier>{c3bf890a-d7d1-446a-9625-895dbabecdfc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\sample\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\libwhale\src\hdatetime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\libwhale\src\hdir.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\libwhale\src\hfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\libwhale\src\hlog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\libwhale\src\hos.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\libwhale\src\hstring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\libwhale\src\hthread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hconnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\libwhale\src\hjson.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\libwhale\src\hzip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\libwhale\src\haes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Z:\libwhale\src\hthreadpool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Z:\libwhale\include\whale\basic\hbytearray.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\libwhale\include\whale\basic\hdatetime.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\libwhale\include\whale\util\hdir.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\libwhale\include\whale\basic\hevent.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\libwhale\include\whale\basic\heventpool.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\libwhale\include\whale\util\hfile.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\libwhale\include\whale\basic\hlog.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\libwhale\include\whale\basic\hplatform.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\libwhale\include\whale\util\hstring.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\libwhale\include\whale\basic\hthread.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\whale\data\hconnection.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Z:\libwhale\include\whale\crypto\hzip.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

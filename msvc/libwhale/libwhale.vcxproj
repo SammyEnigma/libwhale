@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\sample\main.cpp" />
+    <ClCompile Include="..\..\src\hconnection.cpp" />
+    <ClCompile Include="Z:\libwhale\src\haes.cpp" />
+    <ClCompile Include="Z:\libwhale\src\hdatetime.cpp" />
+    <ClCompile Include="Z:\libwhale\src\hdir.cpp" />
+    <ClCompile Include="Z:\libwhale\src\hfile.cpp" />
+    <ClCompile Include="Z:\libwhale\src\hjson.cpp" />
+    <ClCompile Include="Z:\libwhale\src\hlog.cpp" />
+    <ClCompile Include="Z:\libwhale\src\hos.cpp" />
+    <ClCompile Include="Z:\libwhale\src\hstring.cpp" />
+    <ClCompile Include="Z:\libwhale\src\hthread.cpp" />
+    <ClCompile Include="Z:\libwhale\src\hthreadpool.cpp" />
+    <ClCompile Include="Z:\libwhale\src\hzip.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\whale\data\hconnection.h" />
+    <ClInclude Include="Z:\libwhale\include\whale\basic\hbytearray.h" />
+    <ClInclude Include="Z:\libwhale\include\whale\basic\hevent.h" />
+    <ClInclude Include="Z:\libwhale\include\whale\basic\heventpool.h" />
+    <ClInclude Include="Z:\libwhale\include\whale\basic\hlog.h" />
+    <ClInclude Include="Z:\libwhale\include\whale\basic\hplatform.h" />
+    <ClInclude Include="Z:\libwhale\include\whale\basic\hthread.h" />
+    <ClInclude Include="Z:\libwhale\include\whale\basic\hdatetime.h" />
+    <ClInclude Include="Z:\libwhale\include\whale\crypto\hzip.h" />
+    <ClInclude Include="Z:\libwhale\include\whale\util\hdir.h" />
+    <ClInclude Include="Z:\libwhale\include\whale\util\hfile.h" />
+    <ClInclude Include="Z:\libwhale\include\whale\util\hstring.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{54C90C8D-47D1-4DC1-9583-925403972FF5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libwhale</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\bin</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)..\bin</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>z:\libwhale\deps\libbson-1.6.2\winc;z:\libwhale\deps\zlib-1.2.11\include;z:\libwhale\deps\libiconv-1.15\include;z:\libwhale\deps\mongo-c-driver\include;..\..\include;z:\libwhale\include;z:\libwhale\deps\hiredis-3.0.0\winc;z:\libwhale\deps\libevent-2.1.8-stable\winc;z:\libwhale\deps\ocilib-4.2.1\include;z:\libwhale\deps\libpqxx-4.0.1\include;z:\libwhale\deps\sqlite-3.11.1\include;z:\libwhale\deps\mysqlcppconn-1.1.7\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>z:\libwhale\deps\libbson-1.6.2\winc;z:\libwhale\deps\zlib-1.2.11\include;z:\libwhale\deps\libiconv-1.15\include;z:\libwhale\deps\mongo-c-driver\include;..\..\include;z:\libwhale\include;z:\libwhale\deps\hiredis-3.0.0\winc;z:\libwhale\deps\libevent-2.1.8-stable\winc;z:\libwhale\deps\ocilib-4.2.1\include;z:\libwhale\deps\libpqxx-4.0.1\include;z:\libwhale\deps\sqlite-3.11.1\include;z:\libwhale\deps\mysqlcppconn-1.1.7\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
