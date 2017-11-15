@@ -1,0 +1,88 @@
+2016-10-28 Version 3.2.1 What's New
+
+	* Licensing
+
+		- C++ Teamwork - Liap
+		
+	* Fixes
+
+		- Standardized file naming mode.
+	 
+	* Changes
+
+		- Added the Postgresql database support, optimized the TCP and HTTP server module.
+		
+
+2016-10-08 Version 3.2.0 What's New
+
+	* Licensing
+
+		- C++ Teamwork - Liap
+		
+	* Fixes
+
+		- Added Cryptopp Module, Support Encrypt algorithm.
+	 
+	* Changes
+
+		- Added Cryptopp Module, Support Encrypt algorithm. Include AES, MD5, RSA, SHA256, BASE64, HEX.
+		
+		
+2016-05-10 Version 3.1.0 What's New
+
+	* Licensing
+
+		- C++ Teamwork - Liap
+		
+	* Fixes
+
+		- Added Libevent Http and Tcp, Sqlite, XML, Json.
+	 
+	* Changes
+
+		- Added Libevent Http and Tcp, Sqlite, XML, Json etc.
+		
+		
+2016-03-10 Version 3.0.0 What's New
+
+	* Licensing
+
+		- C++ Teamwork - Liap
+		
+	* Fixes
+
+		- Added Thread Pool, Libevent.
+	 
+	* Changes
+
+		- Added Thread Pool, Libevent etc.
+			
+	
+2016-01-10 Version 2.0.0 What's New
+
+	* Licensing
+
+		- C++ Teamwork - Liap
+		
+	* Fixes
+
+		- Support Windows and Linux Platform.
+	 
+	* Changes
+
+		- Added Oracle Database, Redis Cache etc.
+
+
+2015-07-28 Version 1.0.0 What's New
+
+	* Licensing
+
+		- C++ Teamwork - Liap
+		
+	* Fixes
+
+		- Added First Version, Only Support Windows Platform.
+	 
+	* Changes
+
+		- Added First Version, Only Support Windows Platform. Include Thread, Log, Database(Mysql, Mssql), Socket etc.

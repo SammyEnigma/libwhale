@@ -1,0 +1,179 @@
+****************************************************************************
+
+   +----------------------------------------------------------------------+   
+   |                                                                      |
+   |                     LIBWHALE - WHALE LIBRARY for CPLUSPLUS         |
+   |                                                                      |
+   |                      (Whale for CPLUSPLUS)                          |
+   |                                                                      |
+   +----------------------------------------------------------------------+
+   |                                                                      |
+   |                     Website : http://www.createw.com                 |
+   |                                                                      |
+   +----------------------------------------------------------------------+
+   |                                                                      |
+   |   Copyright (c) 2014-2016 CreateW <lianpingdevel@163.com>          |
+   |                                                                      |
+   +----------------------------------------------------------------------+
+   |                                                                      |
+   |                              (GNU PACKAGE)                           |
+   |                                                                      |
+   +----------------------------------------------------------------------+   
+
+****************************************************************************
+
+DESCRIPTION 
+===========
+
+libwhale is an open source and portable Oracle Driver that delivers really fast and reliable access to c++ development.
+
+The libwhale library :
+
+    * offers a rich, full featured and easy to use API
+    * runs on all Operator platforms
+    * is the most complete available
+ 
+VERSION 
+========
+
+see VERSION file.
+
+
+FEATURES 
+========
+   
+    * Full support on all platforms
+
+DOWNLOAD 
+========
+
+Available at :
+
+URL : http://www.createw.com
+
+LICENSE
+=======
+
+see COPYING file.
+
+COMPATIBILITY
+=============
+
+This current source is pure ISO C and should compile with any C90 Compliant compiler
+for ansi version and C99 for unicode versions.
+ 
+ Validated Platforms (32/64bits): 
+ 
+ - Windows 
+ - UP/UX 
+ - Linux 
+ - Solaris 
+ - AIX
+ - Mac OS X
+ - OpenvMS (full validation pending)
+
+ Validated Compilers : 
+
+ - GCC / MinGW
+ - MS Compilers 
+ - XLC  
+ - CCs 
+ - LabView
+
+ Validated whale versions : 
+ 
+ - libwhale-1.0.0 
+ - libwhale-2.0.0 
+ - libwhale-3.0.0 
+ - libwhale-3.1.0 
+ - libwhale-3.2.0 
+ - libwhale-3.2.1 
+
+INSTALLATION AND LIBRARY BUILDS  
+===============================
+
+see INSTALL file for installation options.
+
+To install, use GNU install :
+
+>autoreconf -if
+>./configure --prefix=/usr --libdir=/usr/lib64 --with-libevent=$(pwd)/deps/libevent-2.1.8-stable --with-mysqlcppconn=$(pwd)/deps/mysqlcppconn-1.1.7 --with-ocilib=$(pwd)/deps/ocilib-4.2.1 --with-hiredis=$(pwd)/deps/hiredis-3.0.0 --with-sqlite3=$(pwd)/deps/sqlite-3.11.1
+>make -j4
+>sudo make install-strip
+
+you migth need to `su` to make install
+
+Make sure Oracle library path and the libwhale library path are defined in
+your shared library variable (LB_LIBRARY_PATH, LDPATH, SHLIB_PATH....)
+
+Custom install options
+
+`--with-hiredis'
+
+     Specify Use Redis uses with libwhale libraries
+     Possible values are : yes|no
+     Default is : no
+
+`--with-mysqlcppconn'
+
+     Specify Use Mysql uses with libwhale libraries
+     Possible values are : yes|no
+     Default is : no
+	 
+`--with-libevent'
+
+     Specify Use Libevent uses with libwhale libraries
+     Possible values are : yes|no
+     Default is : no
+	 
+`--with-ocilib'
+
+     Specify Use Oracle uses with libwhale libraries
+     Possible values are : yes|no
+     Default is : no
+	 
+`--with-cryptopp'
+
+     Specify Use Cryptopp uses with libwhale libraries
+     Possible values are : yes|no
+     Default is : no
+
+
+BUILD DEMO
+==========
+
+copy demo.c and Makefile_demo from the folder $(libwhale_PREFIX)/share/doc/libwhale/demo
+
+(libwhale_PREFIX is the installation lib folder - default is /usr/local)
+
+
+MAKE ANY PROGRAM WITH libwhale
+============================
+
+Add the following to your makefile
+
+1/ link libwhale library
+
+add -L$(libwhale_PREFIX)/lib64 -lwhale to your LDFLAGS
+
+
+FEED BACK, BUG REPORTS
+======================
+
+URL : http://www.createw.com
+
+DOCUMENTATION
+=============
+
+Included in the library archive, it's installed in $(libwhale_PREFIX)/share/doc/libwhale/html/
+
+Online : http://www.createw.com
+
+USE OF libwhale
+=============
+
+Please, Let me know about projects using libwhale.
+
+Send me a mail at <lianpingdevel@163.com> with a brief description of your project
+
+Thanks.

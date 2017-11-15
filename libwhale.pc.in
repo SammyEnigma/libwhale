@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: libwhale
+Description: C API for libwhale
+Version: @VERSION@
+Libs: -L${libdir} -lwhale -lpthread @LIBZ_LIBS@ @LIBICONV_LIBS@ @LIBEVENT_LIBS@ @HIREDIS_LIBS@ @MYSQLCPPCONN_LIBS@ @OCILIB_LIBS@ @LIBPQXX_LIBS@ @LIBBSON_LIBS@ @MONGOC_LIBS@  @SQLITE3_LIBS@ @ODBC_LIBS@
+Cflags: -I${includedir} @LIBZ_CFLAGS@ @LIBICONV_CFLAGS@ @LIBEVENT_CFLAGS@ @HIREDIS_CFLAGS@ @MYSQLCPPCONN_CFLAGS@ @OCILIB_CFLAGS@ @LIBPQXX_CFLAGS@ @MONGOC_CFLAGS@ @LIBBSON_CFLAGS@ @SQLITE3_CFLAGS@ @ODBC_CFLAGS@
